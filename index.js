@@ -20,7 +20,7 @@ app.post("/create-call", async (req, res) => {
   console.log("Recebi /create-call do frontend");
 
   try {
-    const response = await fetch("https://api.retell.ai/v2/create-web-call", {
+    const response = await fetch("https://api.retellai.com/v2/create-web-call", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${RETELL_API_KEY}`,
